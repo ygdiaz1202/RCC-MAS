@@ -291,6 +291,8 @@ public class RccMasAlgorithm {
 
     public LinkedList<Integer[]> getAllConstructs() {
         MAX = numbRowsBM;
+        numbConstructs= 0L;
+        numbCandidates= 0L;
         execution = new LinkedList<>();
         constructs = new LinkedList<>();
         AttrSubsetCandidate attrSubsetCandidate = getKernel();
